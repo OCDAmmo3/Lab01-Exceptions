@@ -36,6 +36,12 @@ namespace Exceptions
                 int product = GetProduct(populated, arraySum);
 
                 decimal quotient = GetQuotient(product);
+
+                Console.WriteLine("Your array is size: {0}", array.Length);
+                Console.WriteLine("The numbers in the array are " + String.Join(",", array));
+                Console.WriteLine("The sum of the array is {0}", arraySum);
+                Console.WriteLine("{0} * {1} = {2}", arraySum, product / arraySum, product);
+                Console.WriteLine("{0} / {1} = {2}", product, product / quotient, quotient);
             }
             catch(FormatException fex)
             {
